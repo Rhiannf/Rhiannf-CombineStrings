@@ -8,7 +8,7 @@ public class Application {
      */
     public static void main(String[] args) {
         System.out.println("The Lab.combine method should combine two Strings together.");
-        Lab cs = new Lab();
+        Lab cs = new Lab(null);
 
         System.out.println("Here's what Lab.combine returns when provided values \"abc\" and \"xyz\":");
         String p1val1 = "abc";

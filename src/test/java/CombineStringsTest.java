@@ -2,7 +2,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CombineStringsTest {
-    Lab cs = new Lab();
+    Lab cs = new Lab("a + b");
 
     /**
      * The combination of strings abc and xyz should result in abcxyz.
@@ -13,7 +13,10 @@ public class CombineStringsTest {
         String input2 = "xyz";
         String expected = "abcxyz";
         String actual = cs.combine(input1, input2);
-        Assert.assertEquals(expected,actual);
+        Assert.assertEquals(expected, actual);
+    }
+    private void extracted(String expected, String actual) {
+        Assert.assertEquals(expected, actual);
     }
     /**
      * The combination of strings 123 and 456 should result in 123456.
@@ -24,6 +27,6 @@ public class CombineStringsTest {
         String input2 = "456";
         String expected = "123456";
         String actual = cs.combine(input1, input2);
-        Assert.assertEquals(expected,actual);
+        extracted(expected, actual);
     }
 }
